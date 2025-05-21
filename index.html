@@ -218,9 +218,36 @@
         <!--Turning off Cookie Consent for now-->
     </div>
 
+    <!-- Modal -->
+    <div id="welcomeModal" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Announcement</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>We&rsquo;re opening soon—and we couldn&rsquo;t be more excited to begin this journey with you.</p>
+                <p>Our mission is rooted in compassion, healing, and hope. As we put the final touches in place, we invite you to take a look around and get to know more about our services, our values, and how we&rsquo;re here to support you and your loved ones.</p>
+                <p>Thank you for your patience and trust. We can&rsquo;t wait to welcome you through our doors.</p>
+                <p> — Team Three Rivers Behavioral Health</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
     <script src="runtime.js" defer></script>
     <script src="vendor.js" defer></script>
     <script src="index.js" defer></script>
     <script src="apps.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var myModal = new bootstrap.Modal(document.getElementById('welcomeModal'));
+        myModal.show();
+    });
+    </script>
+
 </body>
 </html>
